@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajinkya S Patil - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4e1d2; /* Soft coffee background */
+            color: #3c2a21; /* Dark coffee text color */
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #7e4b3b, #a87c6f); /* Coffee tones */
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+        }
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        .profile:hover {
+            transform: translateY(-10px);
+        }
+        .profile img {
+            width: 200px;
+            
+            border-radius: 50%;
+            border: 6px solid #7e4b3b;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile-info {
+            max-width: 600px;
+            margin-left: 20px;
+        }
+        .profile-info h2 {
+            font-size: 2.5em;
+            color: #3c2a21;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+        .profile-info p {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        .skills {
+            margin-top: 40px;
+        }
+        .skills h3 {
+            font-size: 2.5em;
+            color: #7e4b3b; /* Coffee color */
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills ul li {
+            font-size: 1.1em;
+            margin: 10px 20px;
+            background: #f5f7fa;
+            padding: 12px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .skills ul li:hover {
+            background: #7e4b3b; /* Hover coffee tone */
+            color: white;
+            transform: translateY(-5px);
+        }
+        .contact {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .contact:hover {
+            transform: translateY(-10px);
+        }
+        .contact a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #7e4b3b, #a87c6f); /* Gradient */
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .contact a:hover {
+            background: #f59e42; /* Accent color */
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #3c2a21;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile img {
+                width: 150px;
+                height: 150px;
+            }
+            .profile-info {
+                margin-top: 20px;
+            }
+            .skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ajinkya S Patil</h1>
+        <p>Web Developer | Tech Enthusiast | Learner</p>
+    </header>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="pic.jpg" alt="Profile Picture">
+            <div class="profile-info">
+                <h2>About Me</h2>
+                <p>Hello! I’m Ajinkya, a passionate web developer with an interest in creating dynamic and user-friendly websites. I love coding, exploring new technologies, and constantly improving my skills.</p>
+                <p><strong>Education:</strong> I am currently in my 3rd year of IT Engineering at VESIT.</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js, Git, Responsive Design.</p>
+                <p><strong>Hobbies:</strong> Trekking, Writing Poems, Listening to Music, Exploring Tech Trends.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Frontend Development: HTML, CSS, JavaScript</li>
+                <li>Backend Development: Node.js</li>
+                <li>Frameworks: React, Express.js</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Database: MongoDB, MySQL</li>
+                <li>Tools: VS Code, Chrome DevTools, Postman</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h3>Contact Me</h3>
+            <p>If you’d like to collaborate, have any questions, or just want to chat, feel free to get in touch!</p>
+            <a href="mailto:ajinkyaspatil20@gmail.com">Email Me</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ajinkya S Patil | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
